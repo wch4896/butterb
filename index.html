@@ -955,10 +955,60 @@
     }
 
     /* ==========================================================
-       MOBILE LUXURY UI/UX OVERHAUL (@media max-width: 900px)
+       MOBILE LUXURY UI/UX MASTERPIECE (@media max-width: 900px)
        ========================================================== */
     @media (max-width: 900px) {
-      /* 1. Header & Announcement Bar */
+      /* Mobile Global Spacing & Whitespace Rhythm Fix */
+      .container {
+        padding: 0 20px;
+      }
+      .container-narrow {
+        padding: 0 20px;
+      }
+
+      /* Sections: Normalize 110px desktop padding down to 50px on mobile */
+      .philosophy-section,
+      .wardrobe-chapter,
+      .palette-sizing-chapter,
+      .editions-chapter,
+      .reservation-chapter,
+      .faq-chapter {
+        padding: 50px 0 !important;
+      }
+
+      .quote-block {
+        margin: 0 auto 34px !important;
+      }
+      .quote-block blockquote {
+        font-size: 1.6rem !important;
+        margin-bottom: 12px !important;
+        line-height: 1.35 !important;
+      }
+
+      .wardrobe-chapter .section-head,
+      .wardrobe-chapter div[style*="text-align: center"] {
+        margin-bottom: 24px !important;
+      }
+      .wardrobe-diptych {
+        margin-top: 24px !important;
+      }
+
+      .palette-minimal-view {
+        margin-bottom: 40px !important;
+      }
+      .sizing-layout {
+        padding-top: 36px !important;
+        gap: 22px !important;
+      }
+
+      .editions-grid {
+        margin-top: 28px !important;
+      }
+      .faq-accordion {
+        margin: 28px auto 0 !important;
+      }
+
+      /* 1. Header & Top Banner */
       .top-banner {
         font-size: 0.70rem;
         padding: 8px 12px;
@@ -973,19 +1023,20 @@
       .btn-nav-reserve {
         padding: 7px 16px;
         font-size: 0.70rem;
+        font-weight: 600;
       }
 
-      /* 2. Hero Section: Mobile Re-ordering & Balance */
+      /* 2. Hero Section */
       .hero-section {
-        padding: 24px 0 48px;
+        padding: 24px 0 46px;
       }
       .hero-layout {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 22px;
       }
       .hero-intro h1 {
-        font-size: 2.25rem;
+        font-size: 2.3rem;
         line-height: 1.14;
         margin-bottom: 14px;
         font-weight: 500;
@@ -997,12 +1048,12 @@
         margin-bottom: 22px;
       }
 
-      /* Mobile Luxury Full-Width Action Button & Price Bar */
+      /* Hero CTA Button & Refined VIP Price Box */
       .hero-action {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
+        gap: 12px;
         margin-bottom: 24px;
       }
       .btn-luxury {
@@ -1015,20 +1066,29 @@
       .hero-pricing-quiet {
         flex-direction: row;
         justify-content: space-between;
-        align-items: baseline;
-        padding: 8px 14px;
-        background: rgba(28, 25, 23, 0.04);
+        align-items: center;
+        padding: 10px 16px;
+        background: rgba(194, 110, 53, 0.06);
         border-radius: var(--radius-sm);
-        border: 1px solid var(--line-subtle);
+        border: 1px solid rgba(194, 110, 53, 0.22);
       }
       .hero-pricing-quiet .label {
         font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        color: var(--accent-clay-dark);
+        font-weight: 600;
       }
       .hero-pricing-quiet .amount {
         font-size: 1.45rem;
+        color: var(--text-primary);
+      }
+      .hero-pricing-quiet .amount s {
+        font-size: 0.95rem;
+        color: var(--text-tertiary);
+        margin-left: 4px;
       }
 
-      /* 3. Hero Model Photo on Mobile - Pinned Badge */
+      /* 3. Hero Photo Framing & Badge */
       .hero-media-wrap {
         aspect-ratio: 4/5;
         width: 100%;
@@ -1043,29 +1103,38 @@
         padding: 6px 14px;
       }
 
-      /* 4. 3 Pillars Clean Horizontal Grid */
+      /* 4. 3 Pillars Precision Grid */
       .hero-pillars {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 12px;
+        gap: 0;
         padding-top: 18px;
         border-top: 1px solid var(--line-subtle);
       }
+      .pillar-item {
+        padding: 0 8px;
+        border-right: 1px solid var(--line-subtle);
+      }
+      .pillar-item:last-child {
+        border-right: none;
+      }
       .pillar-num {
-        font-size: 1.05rem;
+        font-size: 1.15rem;
+        color: var(--accent-clay);
       }
       .pillar-txt {
-        font-size: 0.72rem;
+        font-size: 0.70rem;
         line-height: 1.35;
       }
 
-      /* 5. Craft Engineering Cards: Smooth Native Horizontal Peek Slider */
+      /* 5. Craft Engineering Carousel */
       .engineering-grid {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
+        scroll-padding-left: 20px;
         gap: 16px;
-        padding-bottom: 16px;
+        padding-bottom: 10px;
         margin: 0 -20px;
         padding-left: 20px;
         padding-right: 20px;
@@ -1076,32 +1145,74 @@
         display: none;
       }
       .eng-card {
-        flex: 0 0 84%;
+        flex: 0 0 84vw;
+        max-width: 340px;
         scroll-snap-align: start;
         border-radius: var(--radius-md);
       }
 
-      /* 6. Wardrobe Diptych: Side-by-Side Impact */
+      /* Carousel Indicators */
+      .carousel-dots-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 14px;
+      }
+      .carousel-dots {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .c-dot {
+        width: 22px;
+        height: 3px;
+        background: var(--line-medium);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+      .c-dot.active {
+        width: 36px;
+        background: var(--accent-clay);
+      }
+      .carousel-hint {
+        font-size: 0.70rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text-tertiary);
+      }
+
+      /* 6. Wardrobe Diptych: Symmetrical Alignment */
       .wardrobe-diptych {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
         margin-top: 28px;
       }
+      .diptych-col {
+        display: flex;
+        flex-direction: column;
+      }
       .diptych-meta {
-        padding: 10px 2px 0;
-        padding-bottom: 10px;
+        padding: 12px 2px 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
       }
       .diptych-title {
         font-size: 1.05rem;
-        margin-bottom: 4px;
+        min-height: 2.8rem;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 6px;
+        line-height: 1.25;
       }
       .diptych-desc {
         font-size: 0.76rem;
-        line-height: 1.4;
+        line-height: 1.45;
       }
 
-      /* 7. Palette Minimal View */
+      /* 7. Palette Minimal View & 2x2 Swatches */
       .palette-minimal-view {
         grid-template-columns: 1fr;
         gap: 28px;
@@ -1112,6 +1223,18 @@
       }
       .palette-detail-text h3 {
         font-size: 1.95rem;
+      }
+      .swatch-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+      .swatch-chip {
+        justify-content: center;
+        padding: 11px 12px;
+        font-size: 0.78rem;
+        width: 100%;
       }
 
       /* 8. Sizing Layout on Mobile */
@@ -1172,15 +1295,16 @@
         display: none;
       }
 
+      /* Hide floating whatsapp button on mobile to avoid overlapping sticky bar */
       .whatsapp-concierge {
-        bottom: 74px;
-        right: 18px;
-        padding: 9px 16px;
-        font-size: 0.72rem;
+        display: none !important;
       }
     }
 
-    /* 12. Sticky Mobile Bottom Bar (Mobile Only) */
+    /* 12. Sticky Mobile Bottom Bar (Mobile Only with Integrated WhatsApp) */
+    .carousel-dots-wrap {
+      display: none;
+    }
     .mobile-sticky-bar {
       display: none;
     }
@@ -1195,7 +1319,7 @@
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         border-top: 1px solid var(--line-medium);
-        padding: 12px 20px;
+        padding: 10px 18px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1207,21 +1331,41 @@
       }
       .sticky-title {
         font-family: var(--font-serif);
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         font-weight: 500;
         color: var(--text-primary);
-        line-height: 1.2;
+        line-height: 1.15;
       }
       .sticky-price {
-        font-size: 0.76rem;
+        font-size: 0.74rem;
         color: var(--accent-clay);
         font-weight: 600;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.02em;
+      }
+      .sticky-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .btn-sticky-wa {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #25D366;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(37, 211, 102, 0.35);
+        transition: transform 0.2s ease;
+      }
+      .btn-sticky-wa:active {
+        transform: scale(0.94);
       }
       .btn-sticky-cta {
         background: var(--text-primary);
         color: #FAF7F2;
-        padding: 9px 20px;
+        padding: 10px 20px;
         border-radius: var(--radius-full);
         font-size: 0.76rem;
         letter-spacing: 0.1em;
@@ -1234,6 +1378,7 @@
         background: var(--accent-clay);
       }
     }
+  
   </style>
 </head>
 <body>
@@ -1682,13 +1827,18 @@
     </div>
   </section>
 
-  <!-- Mobile Sticky Floating Reservation Bar -->
+  <!-- Mobile Sticky Floating Reservation Bar (Integrated WhatsApp + CTA) -->
   <div class="mobile-sticky-bar">
     <div class="sticky-left">
       <span class="sticky-title">Butter B Capsule</span>
-      <span class="sticky-price">₹1,499 · Launch Privilege</span>
+      <span class="sticky-price">₹1,499 · Flat 38% Off</span>
     </div>
-    <a href="#reserve" class="btn-sticky-cta">Reserve &rarr;</a>
+    <div class="sticky-right">
+      <a href="https://wa.me/?text=Hi%20Butter%20B%20concierge,%20I%20would%20like%20sizing%20guidance." target="_blank" rel="noopener" class="btn-sticky-wa" title="WhatsApp Concierge">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+      </a>
+      <a href="#reserve" class="btn-sticky-cta">Reserve &rarr;</a>
+    </div>
   </div>
 
   <!-- WhatsApp Concierge Link -->
@@ -1848,6 +1998,29 @@
         successBox.style.display = 'block';
       }, 500);
     }
+  
+    // Carousel scroll indicator for mobile
+    const engGrid = document.querySelector('.engineering-grid');
+    if (engGrid) {
+      engGrid.addEventListener('scroll', () => {
+        const dots = document.querySelectorAll('.c-dot');
+        const scrollLeft = engGrid.scrollLeft;
+        const cardWidth = engGrid.querySelector('.eng-card')?.offsetWidth || 300;
+        const index = Math.round(scrollLeft / cardWidth);
+        dots.forEach((d, i) => {
+          d.classList.toggle('active', i === index);
+        });
+      }, { passive: true });
+    }
+
+    function scrollEng(index) {
+      const engGrid = document.querySelector('.engineering-grid');
+      const cards = engGrid?.querySelectorAll('.eng-card');
+      if (cards && cards[index]) {
+        cards[index].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+      }
+    }
+
   </script>
 </body>
 </html>
