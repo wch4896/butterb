@@ -958,186 +958,181 @@
        MOBILE LUXURY UI/UX MASTERPIECE (@media max-width: 900px)
        ========================================================== */
     @media (max-width: 900px) {
-      /* Mobile Global Spacing & Whitespace Rhythm Fix */
+      /* Global Mobile Container Spacing */
       .container {
-        padding: 0 20px;
+        padding: 0 18px;
       }
       .container-narrow {
-        padding: 0 20px;
+        padding: 0 18px;
       }
 
-      /* Sections: Normalize 110px desktop padding down to 50px on mobile */
-      .philosophy-section,
-      .wardrobe-chapter,
-      .palette-sizing-chapter,
-      .editions-chapter,
-      .reservation-chapter,
-      .faq-chapter {
-        padding: 50px 0 !important;
-      }
-
-      .quote-block {
-        margin: 0 auto 34px !important;
-      }
-      .quote-block blockquote {
-        font-size: 1.6rem !important;
-        margin-bottom: 12px !important;
-        line-height: 1.35 !important;
-      }
-
-      .wardrobe-chapter .section-head,
-      .wardrobe-chapter div[style*="text-align: center"] {
-        margin-bottom: 24px !important;
-      }
-      .wardrobe-diptych {
-        margin-top: 24px !important;
-      }
-
-      .palette-minimal-view {
-        margin-bottom: 40px !important;
-      }
-      .sizing-layout {
-        padding-top: 36px !important;
-        gap: 22px !important;
-      }
-
-      .editions-grid {
-        margin-top: 28px !important;
-      }
-      .faq-accordion {
-        margin: 28px auto 0 !important;
-      }
-
-      /* 1. Header & Top Banner */
+      /* 1. Header & Top Announcement */
       .top-banner {
-        font-size: 0.70rem;
-        padding: 8px 12px;
-        letter-spacing: 0.06em;
+        font-size: 0.68rem;
+        padding: 7px 12px;
+        letter-spacing: 0.05em;
       }
       .nav-inner {
-        height: 60px;
+        height: 58px;
       }
       .brand-logo {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
       }
       .btn-nav-reserve {
-        padding: 7px 16px;
-        font-size: 0.70rem;
+        padding: 6px 14px;
+        font-size: 0.68rem;
         font-weight: 600;
       }
 
-      /* 2. Hero Section */
+      /* 2. Hero Section: Tight, Seamless Flow */
       .hero-section {
-        padding: 24px 0 46px;
+        padding: 20px 0 32px;
       }
       .hero-layout {
         display: flex;
         flex-direction: column;
-        gap: 22px;
+        gap: 16px;
       }
       .hero-intro h1 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         line-height: 1.14;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
         font-weight: 500;
         letter-spacing: -0.01em;
       }
       .hero-lead {
-        font-size: 0.94rem;
-        line-height: 1.65;
-        margin-bottom: 22px;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        margin-bottom: 16px;
       }
 
-      /* Hero CTA Button & Refined VIP Price Box */
+      /* Hero CTA & Compact VIP Pricing Card */
       .hero-action {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
-        margin-bottom: 24px;
+        gap: 8px;
+        margin-bottom: 12px;
       }
       .btn-luxury {
         width: 100%;
         justify-content: center;
-        padding: 16px 24px;
-        font-size: 0.84rem;
-        letter-spacing: 0.1em;
+        padding: 15px 20px;
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
       }
       .hero-pricing-quiet {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 16px;
+        padding: 8px 14px;
         background: rgba(194, 110, 53, 0.06);
         border-radius: var(--radius-sm);
         border: 1px solid rgba(194, 110, 53, 0.22);
       }
       .hero-pricing-quiet .label {
-        font-size: 0.72rem;
-        letter-spacing: 0.08em;
+        font-size: 0.70rem;
+        letter-spacing: 0.06em;
         color: var(--accent-clay-dark);
         font-weight: 600;
       }
       .hero-pricing-quiet .amount {
-        font-size: 1.45rem;
+        font-size: 1.4rem;
         color: var(--text-primary);
       }
       .hero-pricing-quiet .amount s {
-        font-size: 0.95rem;
+        font-size: 0.90rem;
         color: var(--text-tertiary);
         margin-left: 4px;
       }
 
-      /* 3. Hero Photo Framing & Badge */
-      .hero-media-wrap {
-        aspect-ratio: 4/5;
-        width: 100%;
-        border-radius: var(--radius-md);
-        box-shadow: 0 12px 32px rgba(28, 25, 23, 0.08);
-        position: relative;
-      }
-      .hero-ig-badge {
-        bottom: 14px;
-        right: 14px;
-        font-size: 0.70rem;
-        padding: 6px 14px;
-      }
-
-      /* 4. 3 Pillars Precision Grid */
+      /* Hero Pillars: Tightened, Centered, No Orphan Words */
       .hero-pillars {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 0;
-        padding-top: 18px;
+        gap: 4px;
+        padding-top: 12px;
         border-top: 1px solid var(--line-subtle);
+        text-align: center;
       }
       .pillar-item {
-        padding: 0 8px;
+        padding: 0 4px;
         border-right: 1px solid var(--line-subtle);
       }
       .pillar-item:last-child {
         border-right: none;
       }
       .pillar-num {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         color: var(--accent-clay);
+        margin-bottom: 2px;
       }
       .pillar-txt {
-        font-size: 0.70rem;
-        line-height: 1.35;
+        font-size: 0.68rem;
+        line-height: 1.3;
+        color: var(--text-secondary);
       }
 
-      /* 5. Craft Engineering Carousel */
+      /* Hero Media Wrap */
+      .hero-media-wrap {
+        aspect-ratio: 4/5;
+        width: 100%;
+        border-radius: var(--radius-md);
+        box-shadow: 0 10px 28px rgba(28, 25, 23, 0.08);
+        position: relative;
+      }
+      .hero-ig-badge {
+        bottom: 12px;
+        right: 12px;
+        font-size: 0.68rem;
+        padding: 6px 12px;
+      }
+
+      /* 3. Section Vertical Rhythm: Eliminate 220px Dead Voids */
+      .philosophy-section {
+        padding: 36px 0 24px !important;
+        border-top: 1px solid var(--line-subtle);
+      }
+      .wardrobe-chapter {
+        padding: 32px 0 24px !important;
+        border-top: none !important;
+      }
+      .palette-sizing-chapter {
+        padding: 32px 0 24px !important;
+        border-top: none !important;
+      }
+      .editions-chapter {
+        padding: 36px 0 28px !important;
+        border-top: none !important;
+      }
+      .reservation-chapter {
+        padding: 40px 0 !important;
+      }
+      .faq-chapter {
+        padding: 36px 0 60px !important;
+      }
+
+      /* Quote Block */
+      .quote-block {
+        margin: 0 auto 24px !important;
+      }
+      .quote-block blockquote {
+        font-size: 1.5rem !important;
+        margin-bottom: 10px !important;
+        line-height: 1.35 !important;
+      }
+
+      /* Craft Engineering Carousel */
       .engineering-grid {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        scroll-padding-left: 20px;
-        gap: 16px;
-        padding-bottom: 10px;
-        margin: 0 -20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        scroll-padding-left: 18px;
+        gap: 14px;
+        padding-bottom: 6px;
+        margin: 0 -18px;
+        padding-left: 18px;
+        padding-right: 18px;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
       }
@@ -1146,18 +1141,16 @@
       }
       .eng-card {
         flex: 0 0 84vw;
-        max-width: 340px;
+        max-width: 330px;
         scroll-snap-align: start;
         border-radius: var(--radius-md);
       }
-
-      /* Carousel Indicators */
       .carousel-dots-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
-        margin-top: 14px;
+        gap: 6px;
+        margin-top: 10px;
       }
       .carousel-dots {
         display: flex;
@@ -1172,77 +1165,88 @@
         transition: all 0.3s ease;
       }
       .c-dot.active {
-        width: 36px;
+        width: 34px;
         background: var(--accent-clay);
       }
       .carousel-hint {
-        font-size: 0.70rem;
-        letter-spacing: 0.1em;
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--text-tertiary);
       }
 
-      /* 6. Wardrobe Diptych: Symmetrical Alignment */
+      /* 4. Wardrobe Diptych: Eliminate Gap & Clean Bottom Border */
+      .wardrobe-chapter .section-head,
+      .wardrobe-chapter div[style*="text-align: center"] {
+        margin-bottom: 18px !important;
+      }
       .wardrobe-diptych {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 14px;
-        margin-top: 28px;
+        gap: 12px;
+        margin-top: 18px !important;
       }
       .diptych-col {
         display: flex;
         flex-direction: column;
       }
       .diptych-meta {
-        padding: 12px 2px 0;
+        padding: 10px 0 0 !important;
+        border-bottom: none !important; /* Removes double border */
         display: flex;
         flex-direction: column;
         flex-grow: 1;
       }
       .diptych-title {
-        font-size: 1.05rem;
-        min-height: 2.8rem;
+        font-size: 1.02rem;
+        min-height: 2.6rem;
         display: flex;
         align-items: flex-start;
-        margin-bottom: 6px;
+        margin-bottom: 4px;
         line-height: 1.25;
       }
       .diptych-desc {
-        font-size: 0.76rem;
-        line-height: 1.45;
+        font-size: 0.74rem;
+        line-height: 1.4;
       }
 
-      /* 7. Palette Minimal View & 2x2 Swatches */
+      /* 5. Palette Minimal View: Tight 2x2 Grid */
       .palette-minimal-view {
         grid-template-columns: 1fr;
-        gap: 28px;
-        margin-bottom: 50px;
+        gap: 20px;
+        margin-bottom: 28px !important;
       }
       .palette-hero-photo {
         aspect-ratio: 4/3;
       }
       .palette-detail-text h3 {
-        font-size: 1.95rem;
+        font-size: 1.85rem;
+        margin-bottom: 8px;
+      }
+      .palette-detail-text p {
+        font-size: 0.90rem;
+        margin-bottom: 18px;
       }
       .swatch-group {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        margin-bottom: 24px;
+        gap: 8px;
+        margin-bottom: 18px;
       }
       .swatch-chip {
         justify-content: center;
-        padding: 11px 12px;
-        font-size: 0.78rem;
+        padding: 10px 10px;
+        font-size: 0.76rem;
         width: 100%;
       }
 
-      /* 8. Sizing Layout on Mobile */
+      /* 6. Sizing Layout */
       .sizing-layout {
         display: flex;
         flex-direction: column;
-        gap: 24px;
-        padding-top: 40px;
+        gap: 18px;
+        padding-top: 24px !important;
+        border-top: 1px solid var(--line-subtle);
       }
       .sizing-portrait {
         aspect-ratio: 16/10;
@@ -1253,44 +1257,70 @@
         border-radius: var(--radius-md);
       }
       .sizing-table-clean th {
-        padding: 10px 8px;
-        font-size: 0.68rem;
+        padding: 8px 6px;
+        font-size: 0.66rem;
       }
       .sizing-table-clean td {
-        padding: 14px 8px;
-        font-size: 0.82rem;
+        padding: 12px 6px;
+        font-size: 0.80rem;
       }
       .size-tag-clean {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+      }
+      .exchange-promise {
+        margin-top: 14px !important;
+        font-size: 0.80rem;
       }
 
-      /* 9. Editions Pricing Cards on Mobile */
+      /* 7. Editions Cards */
+      .editions-chapter div[style*="text-align: center"] {
+        margin-bottom: 18px !important;
+      }
       .editions-grid {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
+        margin-top: 18px !important;
       }
       .edition-card {
-        padding: 28px 20px;
+        padding: 24px 18px;
       }
       .edition-title {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
       }
 
-      /* 10. Concierge Reservation Form */
+      /* 8. Concierge Reservation Form */
       .reservation-box {
-        padding: 30px 18px;
+        padding: 26px 16px;
         border-radius: var(--radius-md);
       }
       .res-title {
-        font-size: 1.95rem;
+        font-size: 1.85rem;
+      }
+      .res-subtitle {
+        margin-bottom: 24px;
+        font-size: 0.88rem;
+      }
+      .form-field {
+        margin-bottom: 16px;
       }
       .fields-split {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 12px;
       }
 
-      /* 11. Minimalist Nav Menu Hidden on Mobile */
+      /* 9. FAQ Section */
+      .faq-accordion {
+        margin: 20px auto 0 !important;
+      }
+      .faq-header {
+        font-size: 1.15rem;
+      }
+      .faq-body {
+        font-size: 0.86rem;
+      }
+
+      /* Navigation Menu Hidden on Mobile */
       .nav-menu {
         display: none;
       }
@@ -1301,10 +1331,7 @@
       }
     }
 
-    /* 12. Sticky Mobile Bottom Bar (Mobile Only with Integrated WhatsApp) */
-    .carousel-dots-wrap {
-      display: none;
-    }
+    /* 10. Mobile Sticky Floating Bar with Integrated WhatsApp */
     .mobile-sticky-bar {
       display: none;
     }
@@ -1319,7 +1346,7 @@
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         border-top: 1px solid var(--line-medium);
-        padding: 10px 18px;
+        padding: 10px 16px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1337,7 +1364,7 @@
         line-height: 1.15;
       }
       .sticky-price {
-        font-size: 0.74rem;
+        font-size: 0.72rem;
         color: var(--accent-clay);
         font-weight: 600;
         letter-spacing: 0.02em;
@@ -1345,11 +1372,11 @@
       .sticky-right {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
       }
       .btn-sticky-wa {
-        width: 38px;
-        height: 38px;
+        width: 36px;
+        height: 36px;
         border-radius: 50%;
         background: #25D366;
         color: #FFF;
@@ -1365,10 +1392,10 @@
       .btn-sticky-cta {
         background: var(--text-primary);
         color: #FAF7F2;
-        padding: 10px 20px;
+        padding: 9px 18px;
         border-radius: var(--radius-full);
-        font-size: 0.76rem;
-        letter-spacing: 0.1em;
+        font-size: 0.74rem;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         font-weight: 600;
         text-decoration: none;
@@ -1378,8 +1405,7 @@
         background: var(--accent-clay);
       }
     }
-  
-  </style>
+</style>
 </head>
 <body>
 
