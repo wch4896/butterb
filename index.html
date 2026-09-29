@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Butter B | The Art of Wire-Free Intimates</title>
+  <meta name="description" content="Butter B — An understated, wire-free comfort bra crafted for the discerning modern Indian woman. Butter-soft microfiber, breathability, and weightless support.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>B</text></svg>">
+
+  <!-- Luxury Typography: Editorial Serif + Clean Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-canvas: #FAF7F2;
+      --bg-white: #FFFFFF;
+      --bg-stone: #F3ECE1;
+      --bg-warm-card: #F6F1EA;
+      
+      --text-primary: #1C1917;
+      --text-secondary: #5F5750;
+      --text-tertiary: #968D84;
+      
+      --accent-clay: #C26E35;
+      --accent-clay-dark: #AA5B26;
+      --accent-gold: #AF854B;
+      
+      --line-subtle: #E8E0D4;
+      --line-medium: #D8CEBF;
+      
+      --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      --radius-sm: 6px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      font-weight: 300;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .container-narrow {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Banner */
+    .top-banner {
+      background: #1C1917;
+      color: #ECE5DC;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 0.76rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    .top-banner span {
+      color: #E2B078;
+      font-weight: 500;
+    }
+
+    /* Minimalist Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 247, 242, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line-subtle);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+    }
+    .brand-logo {
+      font-family: var(--font-serif);
+      font-size: 2.15rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text-primary);
+    }
+    .brand-logo em {
+      font-style: italic;
+      color: var(--accent-clay);
+    }
+    .nav-menu {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    .nav-menu a {
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+    .nav-menu a:hover {
+      color: var(--text-primary);
+    }
+    .nav-ig-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+    }
+    .nav-ig-link:hover {
+      color: var(--accent-clay);
+    }
+    .btn-nav-reserve {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 9px 24px;
+      border: 1px solid var(--text-primary);
+      border-radius: var(--radius-full);
+      transition: all 0.25s ease;
+    }
+    .btn-nav-reserve:hover {
+      background: var(--text-primary);
+      color: #FFF;
+    }
+
+    /* Instagram Badges in First Fold */
+    .hero-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .ig-pill-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.74rem;
+      letter-spacing: 0.06em;
+      color: var(--text-secondary);
+      background: #FFFFFF;
+      border: 1px solid var(--line-subtle);
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 8px rgba(28, 25, 23, 0.04);
+    }
+    .ig-pill-link:hover {
+      color: var(--accent-clay);
+      border-color: var(--accent-clay);
+      transform: translateY(-1px);
+    }
+    .hero-ig-badge {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(28, 25, 23, 0.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #ECE5DC;
+      font-size: 0.74rem;
+      letter-spacing: 0.06em;
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+    .hero-ig-badge:hover {
+      background: #1C1917;
+      color: #FFF;
+      border-color: var(--accent-clay);
+      transform: translateY(-2px);
+    }
+    .ig-icon-circle {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Chapter Labels & Headings */
+    .chapter-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 14px;
+      display: block;
+      font-weight: 500;
+    }
+    .chapter-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(2.3rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+    }
+    .chapter-heading em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--accent-clay);
+    }
+    .chapter-sub {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 70px 0 100px;
+    }
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-media-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--bg-stone);
+      box-shadow: 0 20px 48px rgba(28, 25, 23, 0.08);
+    }
+    .hero-media-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .hero-intro h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.8rem, 5vw, 4.4rem);
+      line-height: 1.08;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+    .hero-intro h1 em {
+      font-style: italic;
+      color: var(--accent-clay);
+    }
+    .hero-lead {
+      font-size: 1.12rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-action {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .btn-luxury {
+      background: var(--text-primary);
+      color: #FAF7F2;
+      padding: 16px 36px;
+      border-radius: var(--radius-full);
+      font-size: 0.84rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 24px rgba(28, 25, 23, 0.18);
+    }
+    .btn-luxury:hover {
+      background: var(--accent-clay);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(194, 110, 53, 0.28);
+    }
+    .hero-pricing-quiet {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-pricing-quiet .label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+    }
+    .hero-pricing-quiet .amount {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 500;
+    }
+    .hero-pricing-quiet .amount s {
+      font-size: 1.05rem;
+      color: var(--text-tertiary);
+      margin-left: 6px;
+      font-weight: 400;
+    }
+    .hero-pillars {
+      display: flex;
+      gap: 32px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line-subtle);
+    }
+    .pillar-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .pillar-num {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--accent-clay);
+    }
+    .pillar-txt {
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* Chapter 1: The Design Principle */
+    .philosophy-section {
+      padding: 110px 0;
+      border-top: 1px solid var(--line-subtle);
+      background: var(--bg-white);
+    }
+    .quote-block {
+      max-width: 820px;
+      margin: 0 auto 70px;
+      text-align: center;
+    }
+    .quote-block blockquote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+      line-height: 1.35;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+    .quote-block cite {
+      font-style: normal;
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+    }
+
+    /* 3-Column Engineering Grid */
+    .engineering-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .eng-card {
+      background: var(--bg-canvas);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--line-subtle);
+      transition: transform 0.4s ease, border-color 0.4s ease;
+    }
+    .eng-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--line-medium);
+    }
+    .eng-media {
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      background: var(--bg-stone);
+    }
+    .eng-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .eng-card:hover .eng-media img {
+      transform: scale(1.03);
+    }
+    .eng-content {
+      padding: 26px 24px;
+    }
+    .eng-title {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .eng-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Chapter 2: The Wardrobe Diptych (RE-ARCHITECTED WITHOUT AWKWARD OVERLAYS) */
+    .wardrobe-chapter {
+      padding: 110px 0;
+      background: var(--bg-canvas);
+    }
+    .wardrobe-diptych {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      margin-top: 50px;
+    }
+    .diptych-col {
+      display: flex;
+      flex-direction: column;
+    }
+    .diptych-frame {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--bg-stone);
+      box-shadow: 0 16px 36px rgba(28, 25, 23, 0.05);
+      border: 1px solid var(--line-subtle);
+    }
+    .diptych-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.6s ease;
+    }
+    .diptych-col:hover .diptych-frame img {
+      transform: scale(1.025);
+    }
+    .diptych-meta {
+      padding: 22px 4px 0;
+      border-bottom: 1px solid var(--line-subtle);
+      padding-bottom: 18px;
+    }
+    .diptych-title {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .diptych-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Chapter 3: Unified Palette & Sizing */
+    .palette-sizing-chapter {
+      padding: 110px 0;
+      background: var(--bg-white);
+      border-top: 1px solid var(--line-subtle);
+    }
+
+    /* Palette Showcase */
+    .palette-minimal-view {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+    .palette-hero-photo {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      background: var(--bg-stone);
+      box-shadow: 0 16px 40px rgba(28, 25, 23, 0.06);
+      border: 1px solid var(--line-subtle);
+    }
+    .palette-hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+    .palette-detail-text h3 {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      font-weight: 400;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .palette-detail-text p {
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    .swatch-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .swatch-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--line-subtle);
+      background: #FFF;
+      cursor: pointer;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      transition: all 0.25s ease;
+      color: var(--text-secondary);
+    }
+    .swatch-chip.active {
+      border-color: var(--text-primary);
+      color: var(--text-primary);
+      background: var(--bg-stone);
+      font-weight: 500;
+    }
+    .dot-color {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    .dot-color.blue { background: #BDD4E7; }
+    .dot-color.green { background: #CBDBC9; }
+    .dot-color.black { background: #262422; }
+
+    /* Sizing Matrix & Inclusivity (FLAWLESS DUAL-COLUMN HEIGHT ALIGNMENT) */
+    .sizing-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: stretch;
+      padding-top: 70px;
+      border-top: 1px solid var(--line-subtle);
+    }
+    .sizing-portrait {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--bg-stone);
+      box-shadow: 0 16px 36px rgba(28, 25, 23, 0.06);
+      border: 1px solid var(--line-subtle);
+      position: relative;
+      width: 100%;
+    }
+    .sizing-portrait img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+    }
+    .sizing-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .sizing-table-clean {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    .sizing-table-clean th {
+      text-align: left;
+      padding: 12px 14px;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      border-bottom: 1px solid var(--line-medium);
+      font-weight: 500;
+    }
+    .sizing-table-clean td {
+      padding: 15px 14px;
+      border-bottom: 1px solid var(--line-subtle);
+      color: var(--text-secondary);
+    }
+    .sizing-table-clean tr:hover td {
+      background: rgba(250, 247, 242, 0.7);
+      color: var(--text-primary);
+    }
+    .size-tag-clean {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    .exchange-promise {
+      margin-top: 24px;
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      border-left: 2px solid var(--accent-clay);
+      padding-left: 14px;
+    }
+
+    /* Chapter 4: Private Launch Editions */
+    .editions-chapter {
+      padding: 110px 0;
+      background: var(--bg-canvas);
+      border-top: 1px solid var(--line-subtle);
+    }
+    .editions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 50px;
+    }
+    .edition-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 38px 28px;
+      border: 1px solid var(--line-subtle);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .edition-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(28, 25, 23, 0.08);
+      border-color: var(--line-medium);
+    }
+    .edition-card.selected {
+      border-color: var(--accent-clay);
+      box-shadow: 0 18px 48px rgba(194, 110, 53, 0.14);
+      background: var(--bg-warm-card);
+    }
+    .edition-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent-clay);
+      color: #FFF;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+    }
+    .edition-title {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .edition-sub {
+      font-size: 0.84rem;
+      color: var(--text-tertiary);
+      margin-bottom: 24px;
+      min-height: 40px;
+    }
+    .edition-media-thumb {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      margin-bottom: 20px;
+      background: var(--bg-stone);
+      border: 1px solid var(--line-subtle);
+    }
+    .edition-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .edition-price {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    .edition-mrp {
+      font-size: 0.95rem;
+      color: var(--text-tertiary);
+      text-decoration: line-through;
+    }
+    .edition-unit-tag {
+      font-size: 0.78rem;
+      color: #2F6F3F;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .edition-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      margin-bottom: 30px;
+      flex-grow: 1;
+    }
+    .edition-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-select-edition {
+      width: 100%;
+      padding: 13px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: 1px solid var(--text-primary);
+      background: transparent;
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .edition-card.selected .btn-select-edition {
+      background: var(--accent-clay);
+      border-color: var(--accent-clay);
+      color: #FFF;
+    }
+
+    /* Chapter 5: Concierge Reservation Form */
+    .reservation-chapter {
+      padding: 110px 0;
+      background: #1C1917;
+      color: #ECE5DC;
+    }
+    .reservation-box {
+      max-width: 620px;
+      margin: 0 auto;
+      background: #25211E;
+      border-radius: var(--radius-md);
+      padding: 48px 44px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+    }
+    .res-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #D4A373;
+      display: block;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .res-title {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .res-subtitle {
+      text-align: center;
+      font-size: 0.94rem;
+      color: #A8A096;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+    .form-field {
+      margin-bottom: 20px;
+    }
+    .field-label {
+      display: block;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #CFC5BA;
+      margin-bottom: 8px;
+    }
+    .field-input, .field-select {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid #433D37;
+      background: #181513;
+      color: #FFF;
+      font-size: 0.92rem;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .field-input:focus, .field-select:focus {
+      border-color: var(--accent-clay);
+    }
+    .fields-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .btn-reserve-submit {
+      width: 100%;
+      background: var(--accent-clay);
+      color: #FFF;
+      padding: 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      margin-top: 14px;
+      transition: background 0.25s ease;
+    }
+    .btn-reserve-submit:hover {
+      background: var(--accent-clay-dark);
+    }
+    .privacy-guarantee {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #8C847B;
+      margin-top: 18px;
+      line-height: 1.5;
+    }
+
+    /* Chapter 6: Discreet Notes & Questions (FAQ) */
+    .faq-chapter {
+      padding: 100px 0;
+      background: var(--bg-white);
+    }
+    .faq-accordion {
+      max-width: 740px;
+      margin: 40px auto 0;
+    }
+    .faq-entry {
+      border-bottom: 1px solid var(--line-subtle);
+      padding: 22px 0;
+    }
+    .faq-header {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-indicator {
+      font-size: 1.1rem;
+      color: var(--text-tertiary);
+      transition: transform 0.3s ease;
+    }
+    .faq-body {
+      padding-top: 12px;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      display: none;
+    }
+    .faq-entry.active .faq-body {
+      display: block;
+    }
+    .faq-entry.active .faq-indicator {
+      transform: rotate(45deg);
+    }
+
+    /* Minimal Floating WhatsApp */
+    .whatsapp-concierge {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 99;
+      background: #1C1917;
+      color: #ECE5DC;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 20px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.25s ease;
+    }
+    .whatsapp-concierge:hover {
+      background: #25D366;
+      color: #FFF;
+      border-color: #25D366;
+      transform: translateY(-2px);
+    }
+    .whatsapp-concierge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #25D366;
+    }
+
+    /* Understated Footer */
+    footer {
+      background: #141210;
+      color: #8C847A;
+      padding: 60px 0 32px;
+      font-size: 0.82rem;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 36px;
+      border-bottom: 1px solid #26221E;
+    }
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      color: #ECE5DC;
+    }
+    .footer-meta {
+      text-align: center;
+      padding-top: 28px;
+      font-size: 0.75rem;
+      color: #6B635A;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-layout, .wardrobe-diptych, .palette-minimal-view, .sizing-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .sizing-portrait {
+        aspect-ratio: 16/10;
+        height: auto;
+        min-height: auto;
+      }
+      .engineering-grid, .editions-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-menu {
+        display: none;
+      }
+      .reservation-box {
+        padding: 34px 22px;
+      }
+      .fields-split {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="top-banner">
+    Private Allocation • <span>Flat 38% Off Launch Privilege</span> • Pan-India Discreet Delivery
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="brand-logo">Butter <em>B</em></a>
+      <nav class="nav-menu">
+        <a href="#philosophy">The Craft</a>
+        <a href="#wardrobe">Wardrobe</a>
+        <a href="#palette-sizing">Palette & Fit</a>
+        <a href="#editions">Editions</a>
+        <a href="#faq">Questions</a>
+        <a href="https://www.instagram.com/wear.butterb/" target="_blank" rel="noopener" class="nav-ig-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>@wear.butterb</span>
+        </a>
+      </nav>
+      <a href="#reserve" class="btn-nav-reserve">Reserve Allocation</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-layout">
+      <div class="hero-intro">
+        <span class="chapter-label">Chapter 01 — Modern Intimates</span>
+        <h1>Second Skin. Zero Wires. <em>Feels Like Butter.</em></h1>
+        <p class="hero-lead">
+          Conceived for the climate of Mumbai and Delhi, and the discerning lifestyle of the modern Indian woman. Micro-ventilated support that remains weightless from morning to night.
+        </p>
+
+        <div class="hero-action">
+          <a href="#reserve" class="btn-luxury">
+            Reserve Your Allocation &rarr;
+          </a>
+          <div class="hero-pricing-quiet">
+            <span class="label">Launch Privilege</span>
+            <span class="amount">₹1,499 <s>₹1,999</s></span>
+          </div>
+        </div>
+
+        <div class="hero-pillars">
+          <div class="pillar-item">
+            <span class="pillar-num">01</span>
+            <span class="pillar-txt">Zero Underwire Rigidity</span>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">02</span>
+            <span class="pillar-txt">Aerated Climate Cups</span>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">03</span>
+            <span class="pillar-txt">Invisible Under Cottons</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media-wrap">
+        <img id="heroMainImage" src="images/hero-model.png" alt="Butter B Comfort Wireless Bra on Indian Model">
+        <a href="https://www.instagram.com/wear.butterb/" target="_blank" rel="noopener" class="hero-ig-badge">
+          <span class="ig-icon-circle">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </span>
+          <span>Community Diary @wear.butterb &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 1: The Design Philosophy -->
+  <section id="philosophy" class="philosophy-section">
+    <div class="container">
+      <div class="quote-block">
+        <span class="chapter-label">Quiet Craftsmanship</span>
+        <blockquote>
+          "A bra should support you with gentle dignity. It should never leave red imprints on your skin or demand to be unclipped the moment you return home."
+        </blockquote>
+        <cite>— The Butter B Studio Principle</cite>
+      </div>
+
+      <div class="engineering-grid">
+        <div class="eng-card">
+          <div class="eng-media">
+            <img src="images/tech-breathable.png" alt="Micro-ventilation honeycomb cup structure">
+          </div>
+          <div class="eng-content">
+            <h3 class="eng-title">Micro-Aeration Channels</h3>
+            <p class="eng-desc">
+              Perforated molded cups release body heat continuously. Eliminating perspiration accumulation and friction during humid Indian commutes.
+            </p>
+          </div>
+        </div>
+
+        <div class="eng-card">
+          <div class="eng-media">
+            <img src="images/tech-stretch.png" alt="Liquid bonded 4-way buttery stretch">
+          </div>
+          <div class="eng-content">
+            <h3 class="eng-title">Liquid Silicone Bond</h3>
+            <p class="eng-desc">
+              Seamless edge adhesion eliminates chafing thread seams. Expands organically with deep breathing and monthly cycle fluctuations.
+            </p>
+          </div>
+        </div>
+
+        <div class="eng-card">
+          <div class="eng-media">
+            <img src="images/model-back.png" alt="Seamless U-back silhouette">
+          </div>
+          <div class="eng-content">
+            <h3 class="eng-title">360° Smooth Contour</h3>
+            <p class="eng-desc">
+              Wide side wings and a low U-back distribute pressure evenly, preventing bulges or digging marks beneath delicate garments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 2: The Wardrobe Diptych (REDESIGNED: CLEAN CAPTIONS BELOW) -->
+  <section id="wardrobe" class="wardrobe-chapter">
+    <div class="container">
+      <div class="section-head" style="text-align: center; max-width: 680px; margin: 0 auto;">
+        <span class="chapter-label">Discretion & Elegance</span>
+        <h2 class="chapter-heading">Seamless Under <em>Every Silhouette</em></h2>
+        <p class="chapter-sub" style="margin: 0 auto;">
+          Whether tailored linen shirts or handspun cotton Kurtis, Butter B remains completely imperceptible.
+        </p>
+      </div>
+
+      <div class="wardrobe-diptych">
+        <div class="diptych-col">
+          <div class="diptych-frame">
+            <img src="images/tshirt-invisible.png" alt="Butter B under sheer white t-shirt">
+          </div>
+          <div class="diptych-meta">
+            <h4 class="diptych-title">Fitted Western Basics</h4>
+            <p class="diptych-desc">Zero cup rim reflection or visible seams under fine cotton tees.</p>
+          </div>
+        </div>
+
+        <div class="diptych-col">
+          <div class="diptych-frame">
+            <img src="images/kurti-style.png" alt="Butter B under traditional cotton Indian Kurti">
+          </div>
+          <div class="diptych-meta">
+            <h4 class="diptych-title">Traditional Indian Tunics</h4>
+            <p class="diptych-desc">Discreet neckline harmony and smooth back drape under daywear Kurtis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 3: Unified Palette & True Sizing -->
+  <section id="palette-sizing" class="palette-sizing-chapter">
+    <div class="container">
+      <!-- Minimal Palette Viewer -->
+      <div class="palette-minimal-view">
+        <div class="palette-hero-photo">
+          <img id="paletteImageDisplay" src="images/palette-trio.png" alt="Butter B Color Collection on Stone Plinths">
+        </div>
+
+        <div class="palette-detail-text">
+          <span class="chapter-label">Curated Tones</span>
+          <h3 id="paletteTitle">The Capsule Trio</h3>
+          <p id="paletteDescription">
+            Three understated shades crafted to complement warm South Asian undertones: serene Milky Blue, calming Pistachio Cream, and timeless Midnight Black.
+          </p>
+
+          <div class="swatch-group">
+            <button class="swatch-chip active" onclick="updatePalette('trio', this)">
+              <span>All 3 Shades</span>
+            </button>
+            <button class="swatch-chip" onclick="updatePalette('blue', this)">
+              <span class="dot-color blue"></span>
+              <span>Milky Blue</span>
+            </button>
+            <button class="swatch-chip" onclick="updatePalette('green', this)">
+              <span class="dot-color green"></span>
+              <span>Pistachio Cream</span>
+            </button>
+            <button class="swatch-chip" onclick="updatePalette('black', this)">
+              <span class="dot-color black"></span>
+              <span>Midnight Black</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sizing Matrix & Inclusivity -->
+      <div class="sizing-layout">
+        <div class="sizing-portrait">
+          <img src="images/size-curvy.png" alt="Butter B Size Inclusivity M to XL on Indian Model">
+        </div>
+
+        <div class="sizing-info">
+          <span class="chapter-label">Flawless Fit</span>
+          <h3 class="chapter-heading" style="font-size: 2.2rem; margin-bottom: 12px;">Sized for <em>Every Body</em></h3>
+          <p style="font-size: 0.94rem; color: var(--text-secondary); margin-bottom: 24px;">
+            Adaptive 4-way elastic microfiber comfortably accommodates sister sizes, delivering reassuring lift without rigid underwire restriction.
+          </p>
+
+          <table class="sizing-table-clean">
+            <thead>
+              <tr>
+                <th>Butter B Size</th>
+                <th>India / UK Bra Sizes</th>
+                <th>Underbust Band</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="size-tag-clean">Size M</span></td>
+                <td>32C, 34A, 34B</td>
+                <td>32 – 34 in (80–85 cm)</td>
+              </tr>
+              <tr>
+                <td><span class="size-tag-clean">Size L</span></td>
+                <td>34C, 36A, 36B</td>
+                <td>34 – 36 in (85–90 cm)</td>
+              </tr>
+              <tr>
+                <td><span class="size-tag-clean">Size XL</span></td>
+                <td>36C, 38A, 38B, 38C</td>
+                <td>36 – 38 in (90–95 cm)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="exchange-promise">
+            <strong>7-Day Fit Guarantee:</strong> Should your size feel slightly snug or loose upon arrival, our concierge coordinates a complimentary doorstep size exchange.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 4: Private Launch Editions -->
+  <section id="editions" class="editions-chapter">
+    <div class="container">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+        <span class="chapter-label">Allocation & Privileges</span>
+        <h2 class="chapter-heading">The Launch <em>Editions</em></h2>
+        <p class="chapter-sub" style="margin: 0 auto;">
+          Guaranteed early-bird allocation. All privileges inclusive of GST and pan-India shipping.
+        </p>
+      </div>
+
+      <div class="editions-grid">
+        <!-- Edition 1: The Starter -->
+        <div id="cardStarter" class="edition-card" onclick="selectEdition('The Starter (1 Bra) - ₹1,499')">
+          <h3 class="edition-title">The Single</h3>
+          <p class="edition-sub">A single trial piece in your chosen signature tone.</p>
+          <div class="edition-price-row">
+            <span class="edition-price">₹1,499</span>
+            <span class="edition-mrp">₹1,999</span>
+          </div>
+          <div class="edition-unit-tag">Save ₹500 (25% Privilege)</div>
+          <ul class="edition-list">
+            <li>• 1x Butter B Wire-Free Bra</li>
+            <li>• Choice of shade and size</li>
+            <li>• Complimentary Pan-India Delivery</li>
+            <li>• 7-Day Fit Guarantee</li>
+          </ul>
+          <button class="btn-select-edition" type="button">Select Single</button>
+        </div>
+
+        <!-- Edition 2: The Daily Duo -->
+        <div id="cardDuo" class="edition-card" onclick="selectEdition('The Daily Duo (2 Bras) - ₹2,699')">
+          <h3 class="edition-title">The Duo</h3>
+          <p class="edition-sub">One to wear, one in the wash. Essential rotation.</p>
+          <div class="edition-price-row">
+            <span class="edition-price">₹2,699</span>
+            <span class="edition-mrp">₹3,998</span>
+          </div>
+          <div class="edition-unit-tag">₹1,349 each (Save ₹1,299)</div>
+          <ul class="edition-list">
+            <li>• 2x Butter B Wire-Free Bras</li>
+            <li>• Any shade combination</li>
+            <li>• Priority Dispatch Allocation</li>
+            <li>• 7-Day Complimentary Exchange</li>
+          </ul>
+          <button class="btn-select-edition" type="button">Select Duo</button>
+        </div>
+
+        <!-- Edition 3: The Butter Box (Featured) -->
+        <div id="cardTrio" class="edition-card selected" onclick="selectEdition('The Butter Trio (3 Bras) - ₹3,699')">
+          <div class="edition-badge">Signature Trio • 38% Off</div>
+          <div class="edition-media-thumb">
+            <img src="images/butter-box.png" alt="Butter Box Gift Packaging with 3 Bras">
+          </div>
+          <h3 class="edition-title">The Butter Box</h3>
+          <p class="edition-sub">Complete 3-color capsule in rigid gift presentation.</p>
+          <div class="edition-price-row">
+            <span class="edition-price">₹3,699</span>
+            <span class="edition-mrp">₹5,997</span>
+          </div>
+          <div class="edition-unit-tag">₹1,233 each (Save ₹2,298)</div>
+          <ul class="edition-list">
+            <li>• <strong>All 3 Shades:</strong> Blue, Green & Black</li>
+            <li>• Rigid Presentation Gift Box</li>
+            <li>• Linen Travel Drawstring Pouch</li>
+            <li>• Express Pan-India Courier</li>
+          </ul>
+          <button class="btn-select-edition" type="button">Select Signature Trio</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 5: Concierge Reservation Form -->
+  <section id="reserve" class="reservation-chapter">
+    <div class="container">
+      <div class="reservation-box">
+        <span class="res-tag">Private Allocation</span>
+        <h2 class="res-title">Reserve Your Pieces</h2>
+        <p class="res-subtitle">
+          Zero upfront payment required today. Your allocation and launch code will be reserved directly under your details.
+        </p>
+
+        <form id="reservationForm" onsubmit="handleReservation(event)">
+          <div class="form-field">
+            <label class="field-label" for="resName">Full Name</label>
+            <input class="field-input" type="text" id="resName" name="name" placeholder="e.g. Ananya Sen" required>
+          </div>
+
+          <div class="fields-split">
+            <div class="form-field">
+              <label class="field-label" for="resWhatsapp">WhatsApp Number</label>
+              <input class="field-input" type="tel" id="resWhatsapp" name="whatsapp" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-field">
+              <label class="field-label" for="resEmail">Email Address</label>
+              <input class="field-input" type="email" id="resEmail" name="email" placeholder="ananya@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="field-label" for="resEdition">Selected Edition</label>
+            <select class="field-select" id="resEdition" name="bundle" required onchange="syncEditionHighlight(this.value)">
+              <option value="The Butter Trio (3 Bras) - ₹3,699" selected>The Butter Box (All 3 Shades) • ₹3,699 [Signature Edition]</option>
+              <option value="The Daily Duo (2 Bras) - ₹2,699">The Duo (2 Pieces) • ₹2,699</option>
+              <option value="The Starter (1 Bra) - ₹1,499">The Single (1 Piece) • ₹1,499</option>
+            </select>
+          </div>
+
+          <div class="fields-split">
+            <div class="form-field">
+              <label class="field-label" for="resSize">Size</label>
+              <select class="field-select" id="resSize" name="size" required>
+                <option value="Size M (32C, 34A, 34B)" selected>Size M (32C, 34A, 34B)</option>
+                <option value="Size L (34C, 36A, 36B)">Size L (34C, 36A, 36B)</option>
+                <option value="Size XL (36C, 38A, 38B, 38C)">Size XL (36C, 38A, 38B, 38C)</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="field-label" for="resColor">Shade Preference</label>
+              <select class="field-select" id="resColor" name="color">
+                <option value="All 3 Signature Shades" selected>All 3 Shades (Trio Box)</option>
+                <option value="Milky Blue">Milky Blue</option>
+                <option value="Pistachio Cream">Pistachio Cream</option>
+                <option value="Midnight Black">Midnight Black</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="resSubmitBtn" type="submit" class="btn-reserve-submit">
+            Confirm Private Reservation &rarr;
+          </button>
+
+          <p class="privacy-guarantee">
+            Discreetly packaged in neutral presentation boxes across 19,000+ pin codes. No public labeling.
+          </p>
+        </form>
+
+        <div id="resSuccess" style="display: none; text-align: center; padding: 24px 0;">
+          <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 12px; color: #FFF;">Allocation Confirmed</h3>
+          <p style="color: #CFC5BA; font-size: 0.95rem; line-height: 1.7;">
+            Thank you. Your early-access allocation has been logged. You will receive private dispatch and payment coordination via WhatsApp and Email upon release.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 6: Discreet Notes & Questions -->
+  <section id="faq" class="faq-chapter">
+    <div class="container-narrow">
+      <div style="text-align: center;">
+        <span class="chapter-label">Inquiries</span>
+        <h2 class="chapter-heading">Frequently Asked <em>Questions</em></h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-entry">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>Will the integrated molded padding warp or shift in laundering?</span>
+            <span class="faq-indicator">+</span>
+          </div>
+          <div class="faq-body">
+            No. Butter B utilizes a permanently bonded 3D cup structure. Unlike removable foam pads that fold, twist, and degrade, our integrated cups preserve their curvature wash after wash.
+          </div>
+        </div>
+
+        <div class="faq-entry">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>How is packaging handled for discretion?</span>
+            <span class="faq-indicator">+</span>
+          </div>
+          <div class="faq-body">
+            All orders are dispatched in understated, unbranded exterior craft packaging with no mention of intimate apparel on courier shipping labels.
+          </div>
+        </div>
+
+        <div class="faq-entry">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>What if the size requires exchange?</span>
+            <span class="faq-indicator">+</span>
+          </div>
+          <div class="faq-body">
+            We provide a 7-day complimentary exchange window. Simply coordinate with our concierge via WhatsApp and the replacement size will be arranged to your door.
+          </div>
+        </div>
+
+        <div class="faq-entry">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>What payment methods will be available at launch?</span>
+            <span class="faq-indicator">+</span>
+          </div>
+          <div class="faq-body">
+            Prepaid checkout via UPI, NetBanking, and credit cards will be available, alongside Cash on Delivery (COD) for eligible pin codes across India.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Concierge Link -->
+  <a href="https://wa.me/?text=Hi%20Butter%20B%20concierge,%20I%20would%20like%20sizing%20guidance." target="_blank" rel="noopener" class="whatsapp-concierge">
+    <span class="whatsapp-concierge-dot"></span>
+    <span>Fit Concierge</span>
+  </a>
+
+  <!-- Understated Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <span class="footer-logo">Butter B</span>
+          <p style="margin-top: 4px; font-size: 0.82rem; color: #6E665E;">
+            Understated comfort intimates for modern Indian living.
+          </p>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/wear.butterb/" target="_blank" rel="noopener" style="color: #ECE5DC; font-size: 0.84rem; letter-spacing: 0.06em;">
+            Instagram @wear.butterb &rarr;
+          </a>
+        </div>
+      </div>
+      <div class="footer-meta">
+        &copy; 2026 Butter B Studio. All rights reserved. Pan-India Discreet Dispatch.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Accordion
+    function toggleFaq(header) {
+      const entry = header.parentElement;
+      entry.classList.toggle('active');
+    }
+
+    // Palette View & Color Swatch
+    const paletteData = {
+      trio: {
+        title: "The Capsule Trio",
+        desc: "Three understated shades crafted to complement warm South Asian undertones: serene Milky Blue, calming Pistachio Cream, and timeless Midnight Black.",
+        img: "images/palette-trio.png"
+      },
+      blue: {
+        title: "Milky Blue",
+        desc: "A soft, airy sky pastel inspired by morning daylight. Weightless under sheer whites, crisp linen shirts, and summer tunics.",
+        img: "images/ugc-selfie.png"
+      },
+      green: {
+        title: "Pistachio Cream",
+        desc: "An earthy, calming sage neutral that radiates quiet serenity. Designed for leisurely Sundays and all-day lounging.",
+        img: "images/lifestyle-couch.png"
+      },
+      black: {
+        title: "Midnight Black",
+        desc: "Deep, refined, and essential. Pairs seamlessly under evening silhouettes, dark kurtas, and structured blazers.",
+        img: "images/model-black.png"
+      }
+    };
+
+    function updatePalette(shadeKey, element) {
+      document.querySelectorAll('.swatch-chip').forEach(chip => chip.classList.remove('active'));
+      element.classList.add('active');
+
+      const item = paletteData[shadeKey];
+      if (item) {
+        document.getElementById('paletteTitle').textContent = item.title;
+        document.getElementById('paletteDescription').textContent = item.desc;
+        const imgDisplay = document.getElementById('paletteImageDisplay');
+        imgDisplay.style.opacity = '0.3';
+        setTimeout(() => {
+          imgDisplay.src = item.img;
+          imgDisplay.style.opacity = '1';
+        }, 150);
+      }
+
+      // Sync reservation dropdown
+      const colorSelect = document.getElementById('resColor');
+      if (colorSelect) {
+        if (shadeKey === 'blue') colorSelect.value = 'Milky Blue';
+        else if (shadeKey === 'green') colorSelect.value = 'Pistachio Cream';
+        else if (shadeKey === 'black') colorSelect.value = 'Midnight Black';
+        else colorSelect.value = 'All 3 Signature Shades';
+      }
+    }
+
+    // Edition Selection
+    function selectEdition(editionValue) {
+      const selectElem = document.getElementById('resEdition');
+      if (selectElem) {
+        selectElem.value = editionValue;
+      }
+      syncEditionHighlight(editionValue);
+
+      const formArea = document.getElementById('reserve');
+      if (formArea) {
+        formArea.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function syncEditionHighlight(val) {
+      const c1 = document.getElementById('cardStarter');
+      const c2 = document.getElementById('cardDuo');
+      const c3 = document.getElementById('cardTrio');
+
+      c1.classList.remove('selected');
+      c2.classList.remove('selected');
+      c3.classList.remove('selected');
+
+      if (val.includes('Starter')) {
+        c1.classList.add('selected');
+      } else if (val.includes('Duo')) {
+        c2.classList.add('selected');
+      } else {
+        c3.classList.add('selected');
+      }
+    }
+
+    // Google Sheets Webhook Configuration
+    const GOOGLE_SCRIPT_WEBAPP_URL = ""; 
+
+    async function handleReservation(e) {
+      e.preventDefault();
+      const form = document.getElementById('reservationForm');
+      const submitBtn = document.getElementById('resSubmitBtn');
+      const successBox = document.getElementById('resSuccess');
+
+      const payload = {
+        name: form.resName.value,
+        whatsapp: form.resWhatsapp.value,
+        email: form.resEmail.value,
+        bundle: form.resEdition.value,
+        size: form.resSize.value,
+        color: form.resColor.value,
+        timestamp: new Date().toISOString()
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Logging Allocation...";
+
+      if (GOOGLE_SCRIPT_WEBAPP_URL && GOOGLE_SCRIPT_WEBAPP_URL.trim() !== "") {
+        try {
+          await fetch(GOOGLE_SCRIPT_WEBAPP_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+        } catch (err) {
+          console.warn("Script error:", err);
+        }
+      }
+
+      setTimeout(() => {
+        form.style.display = 'none';
+        successBox.style.display = 'block';
+      }, 500);
+    }
+  </script>
+</body>
+</html>
